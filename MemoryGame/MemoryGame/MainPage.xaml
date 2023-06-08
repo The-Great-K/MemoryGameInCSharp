@@ -3,6 +3,133 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MemoryGame.MainPage">
 
-    
+    <ScrollView BackgroundColor="#222222">
+        <StackLayout>
+            <Frame BackgroundColor="#000000">
+                <StackLayout>
+                    <Label Text="Memory Game"
+                       HorizontalTextAlignment="Center"
+                       FontSize="33"
+                       TextColor="#ff0000"
+                       FontAttributes="Bold"/>
+                </StackLayout>
+            </Frame>
+
+            <!--Cards-->
+            <Grid x:Name="LayoutGrid"
+              HorizontalOptions="Center"
+              HeightRequest="400"
+              WidthRequest="400">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Frame Grid.Row="0" Grid.Column="0" Padding="0" Margin="5" 
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button1" ClassId="0" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="0" Padding="0" Margin="5" 
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button2" ClassId="1" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="2" Grid.Column="0" Padding="0" Margin="5"
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button3" ClassId="2" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="3" Grid.Column="0" Padding="0" Margin="5" 
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button4" ClassId="3" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="0" Grid.Column="1" Padding="0" Margin="5"
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button5" ClassId="4" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="1" Padding="0" Margin="5" 
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button6" ClassId="5" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="2" Grid.Column="1" Padding="0" Margin="5"
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button7" ClassId="6" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="3" Grid.Column="1" Padding="0" Margin="5" 
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button8" ClassId="7" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="0" Grid.Column="2" Padding="0" Margin="5" 
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button9" ClassId="8" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="2" Padding="0" Margin="5" 
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button10" ClassId="9" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="2" Grid.Column="2" Padding="0" Margin="5" 
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button11" ClassId="10" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="3" Grid.Column="2" Padding="0" Margin="5" 
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button12" ClassId="11" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="0" Grid.Column="3" Padding="0" Margin="5"
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button13" ClassId="12" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="1" Grid.Column="3" Padding="0" Margin="5"
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button14" ClassId="13" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="2" Grid.Column="3" Padding="0" Margin="5" 
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button15" ClassId="14" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+                <Frame Grid.Row="3" Grid.Column="3" Padding="0" Margin="5" 
+                       BackgroundColor="#000000" CornerRadius="20">
+                    <ImageButton x:Name="Button16" ClassId="15" BorderColor="#ff0000" BackgroundColor="#000000"
+                                 CornerRadius="20" BorderWidth="2" Clicked="Button_Clicked"/>
+                </Frame>
+            </Grid>
+
+            <Label x:Name="WinText"
+                   Text=""
+                   TextColor="#ff0000"/>
+
+            <!--Reset-->
+            <Button x:Name="ResetButton"
+                Text="Reset"
+                TextColor="#ff0000"
+                BackgroundColor="#000000"
+                Margin="200, 20"
+                BorderColor="#ff0000"
+                BorderWidth="2"
+                CornerRadius="20"
+                Clicked="ResetButton_Clicked"/>
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>
